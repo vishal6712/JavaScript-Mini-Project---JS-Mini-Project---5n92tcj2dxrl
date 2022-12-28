@@ -1,0 +1,123 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    min-height: 100vh;
+    background:url("./Images/Screenshot 2022-12-26 163704.jpg");
+    background-size: cover;
+}
+#container
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#block 
+{
+    min-width: 400px;
+    background-color: rgb(246, 246, 246);
+    box-shadow:0px 0px 166px -31px rgba(0, 0, 0, 0.196) ;
+    border-radius: 38px;
+    text-align: center;
+    position: relative;
+}
+#block::before /*glass (bcz we do z-axis -1 hence before)*/
+{
+    content: "";
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    left: -5%;
+    top: -5%;
+    /* background-color: rgba(249, 249, 249, 0.34); */
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow:0px 0px 166px -31px rgba(0, 0, 0, 0.196) ;
+    border: 2px solid rgba(225, 225, 225, 0.7);
+    border-radius: 60px;
+    z-index: -1;/* behind box */
+    backdrop-filter: blur(10px);
+}
+h1{
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px;
+}
+#block-content
+{
+    padding:0 40px;
+}
+.input
+{
+    background-color: white;
+    box-shadow: 0px 0px 166px -31px rgba(0, 0, 0, 0.15);
+    border-radius: 28px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.input label
+{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.input input
+{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(132, 132, 255);
+    width: 60%;
+    text-align: center;
+    font-size: 26px;
+    font-family: sans-serif;
+}
+#calculate
+{
+    font-family: sans-serif;
+    color: white;
+    background: rgb(132, 132, 255);
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 12px 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    transition: background .2s ease;
+}
+#calculate:hover
+{
+    background: rgb(88, 88, 255);
+    cursor: pointer;
+}
+.result
+{
+    padding: 30px 20px;
+}
+.result p
+{
+    font-weight: 600;
+    font-size: 22px;
+    color: black;
+    margin-bottom: 15px;
+}
+#result
+{
+    font-size: 36px;
+    font-weight: 900;
+    color:rgb(132, 132, 255) ;
+    background-color: gainsboro;
+    display: inline-block;
+    padding:7px 20px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+}
+#comment
+{
+    color:rgb(132, 132, 255);
+    font-weight: 800;
+}

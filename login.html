@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFZ | Login</title>
+    <link rel="stylesheet" href="login.css"/>
+    <script src="login.js"></script>
+</head>
+<body>
+    <form onsubmit="return val()">
+        <div class="login-div"> 
+            <a href="index.html" id="logo" ><div class="logo"></div></a>
+            <div class="title">The Fitness Zone</div>
+            <div class="fields">
+                <div class="username">
+                    <input type="username" class="user-input" placeholder="Username" id="username"/>
+                </div>
+                <p class="error" id="userError"></p>
+                <div class="password">
+                    <input type="password" class="pass-input" placeholder="Password" id="password"/>
+                </div>
+                <p class="error" id="passError"></p>
+                <input type="submit" class="login-button" id="button" value="Login"/>
+                <div class="link">
+                    <a href="">Forgot password?</a>&nbsp;or&nbsp;
+                    <a href="">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
