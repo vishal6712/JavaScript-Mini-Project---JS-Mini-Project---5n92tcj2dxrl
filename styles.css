@@ -87,8 +87,8 @@ input, #search-button
     position: relative;
     margin-left: -5px;
     background-color: #eff2f9;
-    top: -1.5px;
-    height: 61.7px;
+    top: 14px;
+    height: 62px;
     width: 60px;
     border: 0px solid black;
     border-top-right-radius: 100px;
